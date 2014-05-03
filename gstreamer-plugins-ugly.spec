@@ -2,16 +2,16 @@
 
 %define		gstname		gst-plugins-ugly
 %define		gst_major_ver	1.0
-%define		gst_req_ver	1.2.3
+%define		gst_req_ver	1.2.4
 
 Summary:	Ugly GStreamer Streaming-media framework plugins
 Name:		gstreamer-plugins-ugly
-Version:	1.2.3
+Version:	1.2.4
 Release:	1
 License:	LGPL
 Group:		Libraries
 Source0:	http://gstreamer.freedesktop.org/src/gst-plugins-ugly/%{gstname}-%{version}.tar.xz
-# Source0-md5:	7ae60e2f759f58f32af5fcdc3c9193c4
+# Source0-md5:	c87a27db498bb736f6c266198657ea74
 URL:		http://gstreamer.freedesktop.org/
 BuildRequires:	autoconf
 BuildRequires:	automake
