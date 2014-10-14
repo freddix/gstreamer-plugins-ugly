@@ -7,7 +7,7 @@
 Summary:	Ugly GStreamer Streaming-media framework plugins
 Name:		gstreamer-plugins-ugly
 Version:	1.4.3
-Release:	1
+Release:	2
 License:	LGPL
 Group:		Libraries
 Source0:	http://gstreamer.freedesktop.org/src/gst-plugins-ugly/%{gstname}-%{version}.tar.xz
@@ -65,9 +65,11 @@ patch -p0 < common/gettext.patch
 %{__autoheader}
 %{__automake}
 %configure \
-	--disable-silent-rules	\
-	--disable-static	\
-	--with-html-dir=%{_gtkdocdir}
+	--disable-silent-rules		\
+	--disable-static		\
+	--with-html-dir=%{_gtkdocdir}	\
+	--with-package-name="GStreamer (Freddix)"   \
+	--with-package-origin="http://freddix.org/"
 %{__make}
 
 %install
